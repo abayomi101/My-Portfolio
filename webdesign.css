@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid #999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+      
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.about-btn {
+    outline: none;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #580000;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.image-container {
+    border: 1rem solid rgb(117, 22, 9);
+    border-radius: 1rem;
+    margin-top: 30px;
+    width: 405px; /* Set width to match image width */
+    height: 420px; /* Set height to match image height */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section p {
+    color: #999;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+span {
+    color: #580000;
+}
+
+#Contact {
+    margin:  1rem;
+    height: 70vh;
+}
+
+.copyrights-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    gap: 1rem;
+} 
+
+#Contact input {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+#Contact textarea {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    min-height: 100px; /* Adjusted min-height */
+}
+
+
+#Contact button {
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #580000;
+    color: white;
+}
+
+#Contact input:focus, #Contact textarea:focus {
+    outline: none;
+    transition: 0.3px;
+    border: 1px solid #580000;
+}
+
+#Contact button:hover {
+    background-color: #999;
+    color: #580000;
+}
+
+.contact-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align at the top */
+    align-items: center;
+    height: auto; /* Allow height to adjust based on content */
+    border-bottom: 1px solid #999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.contact-ctn h2 {
+    font-size: 1.2rem; /* Reduce font size */
+    margin-bottom: 10px; /* Adjust spacing below Contact */
+}
+
+.contact-ctn .work {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center;
+}
+
+.contact-ctn .work p {
+    font-size: 0.9rem; /* Reduce font size */
+    margin: 0 5px; /* Adjust spacing between phone and email */
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="webdesign.css">
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid #999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+      
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.about-btn {
+    outline: none;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #580000;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.image-container {
+    border: 1rem solid rgb(117, 22, 9);
+    border-radius: 1rem;
+    margin-top: 30px;
+    width: 405px; /* Set width to match image width */
+    height: 420px; /* Set height to match image height */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section p {
+    color: #999;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+span {
+    color: #580000;
+}
+
+#Contact {
+    margin:  1rem;
+    height: 70vh;
+}
+
+.copyrights-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    gap: 1rem;
+} 
+
+#Contact input {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+#Contact textarea {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    min-height: 100px; /* Adjusted min-height */
+}
+
+
+#Contact button {
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #580000;
+    color: white;
+}
+
+#Contact input:focus, #Contact textarea:focus {
+    outline: none;
+    transition: 0.3px;
+    border: 1px solid #580000;
+}
+
+#Contact button:hover {
+    background-color: #999;
+    color: #580000;
+}
+
+.contact-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align at the top */
+    align-items: center;
+    height: auto; /* Allow height to adjust based on content */
+    border-bottom: 1px solid #999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.contact-ctn h2 {
+    font-size: 1.2rem; /* Reduce font size */
+    margin-bottom: 10px; /* Adjust spacing below Contact */
+}
+
+.contact-ctn .work {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center;
+}
+
+.contact-ctn .work p {
+    font-size: 0.9rem; /* Reduce font size */
+    margin: 0 5px; /* Adjust spacing between phone and email */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- menu Section -->
+            <ul class="menu">
+                <a href="#hero-section"><li>Home</li></a>
+                <a href="#service"><li>Service</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+        <div class="hero-section"> 
+            <div class="text-container">
+                <p>My Digital Portfolio</p>
+                <h1>It's <span class="name">Yomi</span> </h1>
+                <a href="" class="about-btn">Learn more about me</a>
+            </div>
+            <div class="image-container">
+                <img src="cartoon.jpg" alt="Web image"></div>
+        </div>
+    </header>
+
+    <section id="Contact"> 
+        <form action="mailto:your-email@gmail.com" method="post" enctype="text/plain">
+            <h2>Contact Us</h2>
+            <input type="text" name="" id="" placeholder="Your name">
+            <input type="text" name="" id="" placeholder="Your email"> 
+            <textarea name="" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-ctn">
+            <div class="work"><p>08074160364 | emmanuelafolabi765@gmail.com</p>
+        </div>
+        </div>
+        <div class="copyrights-ctn">
+            <p>&copy; 2020 Yomi</p>
+        </div>
+    </footer>
+</body>
+</html>
